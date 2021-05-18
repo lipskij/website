@@ -11,7 +11,7 @@ const ContactForm = () => {
       setText("Name is too long");
     }
     if (values.target.value.length < 3) {
-      setText("Name is too short");
+      setText("Name has to be longer than 3 letters");
     } else {
       setText("");
     }
@@ -42,12 +42,7 @@ const ContactForm = () => {
     <div className={styles.emailCell}>
       <h2>CONTACT</h2>
       <div className={styles.emailForm}>
-        <form
-          name='contact'
-          method='POST'
-          data-netlify-recaptcha='true'
-          data-netlify='true'
-        >
+        <form name='contact' method='POST' data-netlify='true'>
           <input type='hidden' name='form-name' value='contact' />
           <div>
             {/* <label htmlFor='name' className='sr-only'>
@@ -88,7 +83,6 @@ const ContactForm = () => {
               placeholder='Write me a message'
             ></textarea>
           </div>
-          <div data-netlify-recaptcha='true'></div>
           <div>
             <button type='submit' className={styles.button}>
               Submit
