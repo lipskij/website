@@ -1,9 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Exo', sans-serif;
+  line-height: 2;
+  scroll-behavior: smooth;
+}
+
+body  h1 {
+  font-size: 3rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  top: 0;
+  min-height: 3rem;
+  height: 3rem;
+  width: 100%;
+  z-index: 10;
+  background: transparent;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fefefe;
+  font-family: 'Exo', sans-serif;
+}
+
+nav li:hover {
+  cursor: pointer;
+  transform: scale(0.9);
+  transition-duration: 0.3s;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+}
+
+nav li {
+  text-decoration: none;
+  list-style: none;
+  margin-right: 4rem;
+  font-size: 1.5rem;
+  transition-duration: 0.3s;
 }
 
 a {
@@ -11,6 +64,64 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+.footer-icon {
+  color:#757575;
+  transition-duration: 0.3s;
+}
+
+.footer-icon:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition-duration: 0.3s;
+  color: black;
+}
+
+@media screen and (max-width: 480px) {
+  body h1 {
+    padding-top: 2rem;
+    font-size: 2rem;
+  }
+  .desctop-nav {
+    display: none;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  }
+
+  nav {
+    background: transparent;
+  }
+
+  nav li {
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .isOpen {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+  }
+
+  .isOpen li {
+    list-style: none;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .isOpen ul {
+    background: transparent;
+    justify-content: space-around;
+  }
+  .isOpen a {
+    text-decoration: none;
+    color: white;
+    transition-duration: 0.3s;
+  }
 }

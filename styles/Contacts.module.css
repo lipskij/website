@@ -1,0 +1,83 @@
+.emailCell {
+  padding-bottom: 3rem;
+  background-color: #f2f2f2;
+
+
+}
+
+.emailCell h2 {
+  animation: none;
+  padding: 3rem;
+  font-size: 2rem;
+  text-align: center;
+  color: black;
+}
+
+.emailForm {
+  border-radius: 5px;
+  width: 60vw;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.emailForm p {
+  color: red;
+  padding: 0.5rem 0 0.5rem 0;
+}
+
+.name,
+.subject {
+  width: 100%;
+  height: 3rem;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.subject {
+  height: 20vh;
+}
+
+.button {
+  padding: 1rem;
+  width: 10rem;
+  font-size: 1.1rem;
+  font-weight: 900;
+  font-family: "Exo", sans-serif;
+  transition-duration: 0.3s;
+  background: transparent;
+  border: solid thin black;
+  color: black;
+}
+
+.button:hover {
+  cursor: pointer;
+  background: black;
+  color: #f2f2f2;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    width: 100vw;
+  }
+  .alginaFoto {
+    width: 300px;
+    height: 300px;
+    margin: 0;
+  }
+  .contactsCell {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 2rem 0 0 0;
+    width: 95vw;
+    margin: 0 auto;
+  }
+  .emailForm {
+    margin: 0 auto;
+    width: 90vw;
+  }
+}
