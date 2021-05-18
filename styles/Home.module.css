@@ -55,18 +55,18 @@
   margin: 5rem 0 0 9rem;
 }
 
-.main h1 {
+.bannerSection h1 {
   font-size: 5rem;
   animation: text 1s ease-in-out;
   color: #fefefe;
 }
 
-.main h2 {
+.bannerSection h2 {
   animation: text2 1s ease-in-out;
   color: #fefefe;
 }
 
-.main p {
+.bannerSection p {
   animation: btn 1s ease-in-out;
   font-family: "Exo", sans-serif;
 }
