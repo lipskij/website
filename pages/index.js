@@ -82,7 +82,7 @@ export default function Home() {
 
         <section className={styles.aboutSection}>
           <h2>ABOUT</h2>
-          <div ref={ref2} className={styles.aboutTxt}>
+          <div ref={ref} className={styles.aboutTxt}>
             <p>
               I'm a Front-End Developer from Vilnius Lithuania.<br></br>I enjoy
               creating responsive,fast loading, dynamic user experiences.
@@ -119,7 +119,7 @@ export default function Home() {
                 <picture>
                   <source srcSet='ski.webp' media='(min-width: 800px)' />
 
-                  <img ref={ref3} src='ski.png' alt='project' />
+                  <img ref={ref1} src='ski.png' alt='project' />
                 </picture>
               </a>
             </Link>
@@ -131,7 +131,7 @@ export default function Home() {
               <a rel='noopener' aria-label='project' target='_blank'>
                 <picture>
                   <source srcSet='game.webp' media='(min-width: 800px)' />
-                  <img ref={ref} src='game.jpeg' alt='project' />
+                  <img ref={ref2} src='game.jpeg' alt='project' />
                 </picture>
               </a>
             </Link>
@@ -144,7 +144,7 @@ export default function Home() {
               <a rel='noopener' aria-label='project' target='_blank'>
                 <picture>
                   <source srcSet='covid.webp' media='(min-width: 800px)' />
-                  <img ref={ref1} src='covid.png' alt='project' />
+                  <img ref={ref3} src='covid.png' alt='project' />
                 </picture>
               </a>
             </Link>
