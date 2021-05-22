@@ -73,7 +73,8 @@
 
 .bannerSection button {
   padding: 1rem;
-  width: 10rem;
+  width: 12rem;
+  height: 5rem;
   font-size: 1.1rem;
   font-weight: 900;
   font-family: "Exo", sans-serif;
@@ -86,7 +87,6 @@
 
 .bannerSection button:hover {
   cursor: pointer;
-  transform: scale(1.05);
   transition-duration: 0.3s;
   background: #eaeaea;
   color: black;
@@ -194,15 +194,30 @@
 
 .more {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   min-width: 50%;
   min-height: 50vh;
 }
 
-.more svg {
-  animation: svg 3s infinite;
+.more button {
+  padding: 1rem;
+  width: 12rem;
+  height: 5rem;
+  font-size: 1.1rem;
+  font-weight: 900;
+  font-family: "Exo", sans-serif;
+  transition-duration: 0.3s;
+  background: transparent;
+  color: black;
+  border: thin solid black;
+}
+
+.more button:hover {
+  cursor: pointer;
+  color: white;
+  background: black;
 }
 
 .footer {
@@ -249,18 +264,6 @@
   100% {
     transform: translateY(0);
     opacity: 1;
-  }
-}
-
-@keyframes svg {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.5);
-  }
-  100% {
-    transform: scale(1);
   }
 }
 

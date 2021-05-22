@@ -45,9 +45,6 @@ const ContactForm = () => {
         <form name='contact' method='POST' data-netlify='true'>
           <input type='hidden' name='form-name' value='contact' />
           <div>
-            {/* <label htmlFor='name' className='sr-only'>
-              Name
-            </label> */}
             <p>{text}</p>
             <input
               onChange={nameInput}
@@ -58,9 +55,6 @@ const ContactForm = () => {
             />
           </div>
           <div>
-            {/* <label htmlFor='email' className='sr-only'>
-              Email
-            </label> */}
             <p>{email}</p>
             <input
               onChange={emailInput}
@@ -71,9 +65,6 @@ const ContactForm = () => {
             />
           </div>
           <div>
-            {/* <label htmlFor='message' className='sr-only'>
-              Message
-            </label> */}
             <p>{message}</p>
             <textarea
               onChange={messageInput}

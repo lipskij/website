@@ -1,10 +1,10 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Nav from "../component/Nav";
 import Link from "next/link";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
-import { VscArrowDown, VscArrowRight, VscArrowUp } from "react-icons/vsc";
+import { VscArrowDown, VscArrowUp } from "react-icons/vsc";
 import {
   SiNextDotJs,
   SiJavascript,
@@ -115,7 +115,7 @@ export default function Home() {
           <h2>PROJECTS</h2>
           <div className={styles.projectGallery}>
             <Link href='https://skidoc.fr/'>
-              <a rel='noopener' aria-label='project' target='_blank'>
+              <a rel='noopener' aria-label='project' target="_blank">
                 <picture>
                   <source srcSet='ski.webp' media='(min-width: 800px)' />
 
@@ -128,7 +128,7 @@ export default function Home() {
               React. Using AWS and working with CI/CD
             </p>
             <Link href='https://vaskichi.meteorapp.com/'>
-              <a rel='noopener' aria-label='project' target='_blank'>
+              <a rel='noopener' aria-label='project' target="_blank">
                 <picture>
                   <source srcSet='game.webp' media='(min-width: 800px)' />
                   <img ref={ref2} src='game.jpeg' alt='project' />
@@ -141,7 +141,7 @@ export default function Home() {
               For this game i used MeteorJs, React, MongoDB.
             </p>
             <Link href='https://covid-19-graph-ltu.netlify.app/'>
-              <a rel='noopener' aria-label='project' target='_blank'>
+              <a rel='noopener' aria-label='project' target="_blank">
                 <picture>
                   <source srcSet='covid.webp' media='(min-width: 800px)' />
                   <img ref={ref3} src='covid.png' alt='project' />
@@ -157,14 +157,14 @@ export default function Home() {
           </div>
           <div className={styles.more}>
             <p>Much more on my GitHub</p>
-            <Link href='https://github.com/lipskij'>
+            <Link href='https://github.com/lipskij' target="_blank">
               <a
                 className='footer-icon'
                 href='https://github.com/lipskij'
-                taget='_blank'
+                target="_blank"
                 aria-label='github'
               >
-                <AiFillGithub size={30} />
+                <button>CHECK IT</button>
               </a>
             </Link>
           </div>
@@ -182,7 +182,7 @@ export default function Home() {
             <a
               className='footer-icon'
               href='https://github.com/lipskij'
-              taget='_blank'
+              target="_blank"
               aria-label='github'
             >
               <AiFillGithub size={30} />
@@ -192,7 +192,7 @@ export default function Home() {
             <a
               className='footer-icon'
               href='https://www.linkedin.com/in/emil-lipskij-6920831b2/'
-              taget='_blank'
+              target="_blank"
               aria-label='linkedin'
             >
               <AiFillLinkedin size={30} />
