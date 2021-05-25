@@ -268,35 +268,83 @@
   }
 }
 
-/* 
-  ##Device = Tablets, Ipads (portrait)
-  ##Screen = B/w 768px to 1024px
-*/
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  
-  /* CSS */
-  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  .main {
+    width: 100vw;
+  }
+  .bannerSection {
+    padding: 1rem;
+    height: 70vh;
+    margin: 0 auto;
+  }
+  .bannerSection h1 {
+    font-size: 4rem;
+  }
+  .bannerSection h2 {
+    font-size: 2rem;
+  }
+  .bannerSection button {
+    font-size: 2rem;
+    width: 15rem;
+  }
+  .secondTxt {
+    padding-top: 4rem;
+    margin: 0 auto;
+    font-size: 2rem;
+    width: 100%;
+  }
+  .bannerSection svg {
+    margin: 1rem 0 0 50%;
+  }
+  /* about*/
+  .aboutSection {
+    height: 50%;
+  }
+  .aboutSection h2 {
+    font-size: 4rem;
+  }
+  .aboutSection p {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+  /* projects */
+  .projectGallery {
+    display: flex;
+    flex-direction: column;
+  }
+  .projectSection h2 {
+    font-size: 4rem;
+  }
+  .projectSection p {
+    font-size: 2rem;
+  }
+  .projectSection img {
+    width: 100%;
+    height: auto;
+  }
 }
 
-/* 
-  ##Device = Tablets, Ipads (landscape)
-  ##Screen = B/w 768px to 1024px
-*/
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
   
-  /* CSS */
-  
+  /* all in all good */
 }
 
-/* 
-  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-  ##Screen = B/w 481px to 767px
-*/
 
 @media (min-width: 481px) and (max-width: 767px) {
-  /* CSS */
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
   .main {
     width: 100%;
     padding-top: 2rem;
@@ -353,12 +401,11 @@
   }
 }
 
-/* 
-  ##Device = Most of the Smartphones Mobiles (Portrait)
-  ##Screen = B/w 320px to 479px
-*/
-
 @media (min-width: 320px) and (max-width: 480px) {
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
   .container {
     min-height: 100%;
     min-width: 10%;
