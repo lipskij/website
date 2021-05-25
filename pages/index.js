@@ -61,7 +61,8 @@ export default function Home() {
       <main className={styles.main}>
         <section className={styles.bannerSection}>
           <video autoPlay muted loop>
-            <source src='video.mp4' type='video/mp4' />
+            <source src='video.webm' type='video/webm'/>
+            {/* <source src='video.mp4' type='video/mp4' /> */}
           </video>
           <h1 className={styles.title}>Hi. I'm Emil</h1>
           <h2>Front End web developer</h2>

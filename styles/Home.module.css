@@ -268,10 +268,100 @@
   }
 }
 
-@media (max-width: 480px) {
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  /* CSS */
+  .main {
+    width: 100%;
+    padding-top: 2rem;
+  }
+  .bannerSection {
+    display: flex;
+    flex-direction: column;
+    padding-left: 4rem;
+    height: 70vh;
+    /* width: 100vw; */
+  }
+  .bannerSection video {
+    width: 110vw;
+    height: 110vh;
+  }
+  .bannerSection h1{
+    font-size: 1.8rem;
+  }
+  .bannerSection h2 {
+    font-size: 1.2rem;
+  }
+  .bannerSection button {
+    width: 10rem;
+    height: 4rem;
+    font-size: 1rem;
+  }
+  .bannerSection svg {
+    margin: 0 0 0 50%;
+  }
+  .secondTxt {
+    margin: 0;
+    padding-top: 1rem;
+    font-size: 1.2rem;
+  }
+  /* about */
+  .aboutSection {
+    text-align: center;
+  }
+  .aboutSection h2 {
+    font-size: 1.8rem;
+    padding: 0;
+  }
+  .aboutSection div {
+    padding-top: 1rem;
+  }
+  /* projects */
+  .projectSection img {
+    width: 500px;
+    height: 300px;
+  }
+  .projectGallery {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
   .container {
-    min-height: 100vh;
-    min-width: 10vw;
+    min-height: 100%;
+    min-width: 10%;
   }
   .main {
     display: flex;
@@ -309,6 +399,7 @@
   }
   .projectGallery img {
     width: 100%;
+    height: 250px;
   }
   .secondTxt {
     display: flex;
