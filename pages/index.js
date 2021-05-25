@@ -9,7 +9,6 @@ import {
   SiNextDotJs,
   SiJavascript,
   SiGatsby,
-  SiNodeDotJs,
   SiMeteor,
   SiCss3,
   SiReact,
@@ -97,7 +96,6 @@ export default function Home() {
             <SiReact size={50} />
             <SiNextDotJs size={50} />
             <SiGatsby size={50} />
-            <SiNodeDotJs size={50} />
             <SiMeteor size={50} />
           </div>
 
@@ -115,10 +113,9 @@ export default function Home() {
           <h2>PROJECTS</h2>
           <div className={styles.projectGallery}>
             <Link href='https://skidoc.fr/'>
-              <a rel='noopener' aria-label='project' target="_blank">
+              <a rel='noopener' aria-label='project' target='_blank'>
                 <picture>
                   <source srcSet='ski.webp' media='(min-width: 800px)' />
-
                   <img ref={ref1} src='ski.png' alt='project' />
                 </picture>
               </a>
@@ -128,7 +125,7 @@ export default function Home() {
               React. Using AWS and working with CI/CD
             </p>
             <Link href='https://vaskichi.meteorapp.com/'>
-              <a rel='noopener' aria-label='project' target="_blank">
+              <a rel='noopener' aria-label='project' target='_blank'>
                 <picture>
                   <source srcSet='game.webp' media='(min-width: 800px)' />
                   <img ref={ref2} src='game.jpeg' alt='project' />
@@ -141,7 +138,7 @@ export default function Home() {
               For this game i used MeteorJs, React, MongoDB.
             </p>
             <Link href='https://covid-19-graph-ltu.netlify.app/'>
-              <a rel='noopener' aria-label='project' target="_blank">
+              <a rel='noopener' aria-label='project' target='_blank'>
                 <picture>
                   <source srcSet='covid.webp' media='(min-width: 800px)' />
                   <img ref={ref3} src='covid.png' alt='project' />
@@ -157,12 +154,13 @@ export default function Home() {
           </div>
           <div className={styles.more}>
             <p>Much more on my GitHub</p>
-            <Link href='https://github.com/lipskij' target="_blank">
+            <Link href='https://github.com/lipskij' target='_blank'>
               <a
                 className='footer-icon'
                 href='https://github.com/lipskij'
-                target="_blank"
+                target='_blank'
                 aria-label='github'
+                rel='noreferrer'
               >
                 <button>CHECK IT</button>
               </a>
@@ -182,8 +180,9 @@ export default function Home() {
             <a
               className='footer-icon'
               href='https://github.com/lipskij'
-              target="_blank"
+              target='_blank'
               aria-label='github'
+              rel='noreferrer'
             >
               <AiFillGithub size={30} />
             </a>
@@ -192,8 +191,9 @@ export default function Home() {
             <a
               className='footer-icon'
               href='https://www.linkedin.com/in/emil-lipskij-6920831b2/'
-              target="_blank"
+              target='_blank'
               aria-label='linkedin'
+              rel='noreferrer'
             >
               <AiFillLinkedin size={30} />
             </a>

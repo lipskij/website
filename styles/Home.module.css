@@ -156,7 +156,8 @@
 
 .projectSection img {
   margin: 0 auto;
-  width: 95%;
+  width: 600px;
+  height: 400px;
   box-shadow: 3px 3px 10px 2px rgb(197, 197, 197);
   transition-duration: 0.5s;
   opacity: 0;
