@@ -85,9 +85,9 @@ export default function Home() {
           <div ref={ref} className={styles.aboutTxt}>
             <p>
               I'm a Front-End Developer from Vilnius Lithuania.<br></br>I enjoy
-              creating responsive,fast loading, dynamic user experiences.
+              creating responsive,fast-loading, dynamic user experiences.
               <br></br>
-              Finished Frond End Masters online courses.<br></br>
+              Finished Front End Masters online courses.<br></br>
               Previously worked with circus troupe as an acrobat and juggler.
             </p>
           </div>
