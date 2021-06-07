@@ -57,17 +57,17 @@
 
 .bannerSection h1 {
   font-size: 4rem;
-  animation: text 1s ease-in-out;
+  /* animation: text 1s ease-in-out; */
   color: #fefefe;
 }
 
 .bannerSection h2 {
-  animation: text2 1s ease-in-out;
+  /* animation: text2 1s ease-in-out; */
   color: #fefefe;
 }
 
 .bannerSection p {
-  animation: btn 1s ease-in-out;
+  /* animation: btn 1s ease-in-out; */
   font-family: "Exo", sans-serif;
 }
 
@@ -82,7 +82,7 @@
   background: transparent;
   color: #eaeaea;
   border: thin solid #fefefe;
-  animation: btn 1s ease-in-out;
+  /* animation: btn 1s ease-in-out; */
 }
 
 .bannerSection button:hover {
