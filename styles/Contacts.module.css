@@ -81,6 +81,9 @@
     margin: 0 auto;
     width: 90vw;
   }
+  .button button {
+    height: 6vh;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
