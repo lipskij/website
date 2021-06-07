@@ -134,7 +134,7 @@ export default function Home() {
               </a>
             </Link>
             <p>
-              This was just a learning projects,but ended up being quite fun.{" "}
+              This was just a learning project,but ended up being quite fun.{" "}
               <br></br>
               For this game i used MeteorJs, React, MongoDB.
             </p>
