@@ -52,7 +52,7 @@
 
 .bannerSection svg {
   color: #fefefe;
-  margin: 5rem 0 0 9rem;
+  margin-top: 2rem;
 }
 
 .bannerSection h1 {
@@ -103,10 +103,6 @@
   background-color: #f5f5f5;
 }
 
-.aboutSection div {
-  padding: 3rem 0 3rem 0;
-}
-
 .aboutTxt {
   transition-duration: 0.5s;
   opacity: 0;
@@ -128,6 +124,7 @@
 
 .aboutSection svg {
   transition-duration: 0.5s;
+  margin-top: 4rem;
 }
 
 .aboutSection svg:hover {

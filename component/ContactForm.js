@@ -91,10 +91,9 @@ const ContactForm = () => {
               placeholder='Write me a message*'
             ></textarea>
           </div>
-          <div>
+          <div className={styles.button}>
             <button
               type='submit'
-              className={styles.button}
               disabled={disabled}
               style={
                 disabled
@@ -106,7 +105,7 @@ const ContactForm = () => {
                   : null
               }
             >
-              Submit
+              SUBMIT
             </button>
           </div>
         </form>

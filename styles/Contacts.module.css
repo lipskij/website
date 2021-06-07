@@ -40,18 +40,21 @@
 }
 
 .button {
-  padding: 1rem;
   width: 10rem;
-  font-size: 1.1rem;
-  font-weight: 900;
-  font-family: "Exo", sans-serif;
   transition-duration: 0.3s;
   background: transparent;
   border: solid thin black;
   color: black;
 }
 
-.button:hover {
+.button button {
+  font-size: 1.5rem;
+  width: 100%;
+  height: 5vh;
+  border: none;
+}
+
+.button button:hover {
   cursor: pointer;
   background: black;
   color: #f2f2f2;

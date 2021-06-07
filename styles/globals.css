@@ -32,6 +32,7 @@ nav a {
   text-decoration: none;
   color: #fefefe;
   font-family: 'Exo', sans-serif;
+  margin-right: 4rem;
 }
 
 nav li:hover {
@@ -57,11 +58,9 @@ a {
   font-size: 1.5rem;
   color: inherit;
   text-decoration: none;
-  margin-right: 4rem;
 }
 
 .footer-icon {
-  color:#757575;
   transition-duration: 0.3s;
 }
 
@@ -69,7 +68,7 @@ a {
   cursor: pointer;
   transform: scale(1.1);
   transition-duration: 0.3s;
-  color: black;
+  color: grey;
 }
 
 @media screen and (max-width: 480px) {
