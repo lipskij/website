@@ -162,7 +162,7 @@ export default function Home() {
             <Link href='https://covid-19-graph-ltu.netlify.app/'>
               <a rel='noopener' aria-label='project' target='_blank'>
                 <picture>
-                  <source srcSet='covid.webp' />
+                  <source srcSet='covid1.webp' />
                   <img ref={ref3} src='covid.png' alt='project' />
                 </picture>
               </a>
