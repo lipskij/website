@@ -73,7 +73,7 @@ export default function Home() {
             <p>I code intresting interactive web sites</p>
             <p>Using tools like HTML, CSS3 and JavaScript</p>
             <a href='#about' aria-label='about'>
-              <VscArrowDown size={30} />
+              <VscArrowDown size={50} />
             </a>
           </div>
         </section>
