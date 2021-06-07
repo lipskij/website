@@ -66,9 +66,9 @@ export default function Home() {
           </video>
           <h1 className={styles.title}>Hi. I'm Emil</h1>
           <h2>Front End web developer</h2>
-          <Link href='#contacts'>
-            <button>GET IN TOUCH</button>
-          </Link>
+          
+            <button><Link href='#contacts'>GET IN TOUCH</Link></button>
+          
           <div className={styles.secondTxt}>
             <p>I code intresting interactive web sites</p>
             <p>Using tools like HTML, CSS3 and JavaScript</p>

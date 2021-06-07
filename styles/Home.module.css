@@ -75,21 +75,23 @@
   padding: 1rem;
   width: 12rem;
   height: 5rem;
-  font-size: 1.1rem;
-  font-weight: 900;
   font-family: "Exo", sans-serif;
   transition-duration: 0.3s;
   background: transparent;
-  color: #eaeaea;
   border: thin solid #fefefe;
+  margin: 0;
   /* animation: btn 1s ease-in-out; */
+}
+
+.bannerSection button a {
+  color: #f5f5f5;
+  margin: 0;
 }
 
 .bannerSection button:hover {
   cursor: pointer;
   transition-duration: 0.3s;
-  background: #eaeaea;
-  color: black;
+  transform: scale(1.05);
 }
 
 .aboutSection {
