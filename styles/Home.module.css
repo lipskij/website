@@ -199,11 +199,12 @@
 }
 
 .projectGallery a {
-  color:cornflowerblue;
+  color:#167ab4;
 }
 
 .projectGallery .projectLinks {
   width: 8rem;
+  font-weight: 900;
   transition-duration: 0.3s;
 }
 
