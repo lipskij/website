@@ -61,7 +61,7 @@ export default function Home() {
       <main className={styles.main}>
         <section className={styles.bannerSection}>
           <video autoPlay muted loop>
-            <source src='video.webm' type='video/webm'/>
+            <source src='video.webm' type='video/webm' />
             {/* <source src='video.mp4' type='video/mp4' /> */}
           </video>
           <h1 className={styles.title}>Hi. I'm Emil</h1>
@@ -116,19 +116,30 @@ export default function Home() {
             <Link href='https://skidoc.fr/'>
               <a rel='noopener' aria-label='project' target='_blank'>
                 <picture>
-                  <source srcSet='ski.webp' media='(min-width: 800px)' />
+                  <source srcSet='ski.webp' />
                   <img ref={ref1} src='ski.png' alt='project' />
                 </picture>
               </a>
             </Link>
             <p>
               Creating internal stock management system using NoSQL, meteor and
-              React. Using AWS and working with CI/CD
+              React. Using AWS and working with CI/CD.
+              <Link href='https://skidoc.fr/'>
+                <a
+                  className={styles.projectLinks}
+                  rel='noopener'
+                  aria-label='project'
+                  target='_blank'
+                >
+                  Click to see.
+                </a>
+              </Link>
             </p>
+
             <Link href='https://vaskichi.meteorapp.com/'>
               <a rel='noopener' aria-label='project' target='_blank'>
                 <picture>
-                  <source srcSet='game.webp' media='(min-width: 800px)' />
+                  <source srcSet='game.webp' />
                   <img ref={ref2} src='game.jpeg' alt='project' />
                 </picture>
               </a>
@@ -137,11 +148,21 @@ export default function Home() {
               This was just a learning project,but ended up being quite fun.{" "}
               <br></br>
               For this game i used MeteorJs, React, MongoDB.
+              <Link href='https://vaskichi.meteorapp.com/'>
+                <a
+                  className={styles.projectLinks}
+                  rel='noopener'
+                  aria-label='project'
+                  target='_blank'
+                >
+                  Click to see.
+                </a>
+              </Link>
             </p>
             <Link href='https://covid-19-graph-ltu.netlify.app/'>
               <a rel='noopener' aria-label='project' target='_blank'>
                 <picture>
-                  <source srcSet='covid1.webp' media='(min-width: 800px)' />
+                  <source srcSet='covid.webp' />
                   <img ref={ref3} src='covid.png' alt='project' />
                 </picture>
               </a>
@@ -151,6 +172,16 @@ export default function Home() {
               <br></br>
               Data was used from external API along with Axios for HTTP
               requests.
+              <Link href='https://covid-19-graph-ltu.netlify.app/'>
+                <a
+                  className={styles.projectLinks}
+                  rel='noopener'
+                  aria-label='project'
+                  target='_blank'
+                >
+                  Click to see.
+                </a>
+              </Link>
             </p>
           </div>
           <div className={styles.more}>

@@ -156,8 +156,8 @@
 
 .projectSection img {
   margin: 0 auto;
-  width: 600px;
-  height: 420px;
+  max-width: 600px;
+  max-height: 420px;
   box-shadow: 3px 3px 10px 2px rgb(197, 197, 197);
   transition-duration: 0.5s;
   opacity: 0;
@@ -191,6 +191,25 @@
   row-gap: 5rem;
   width: 95vw;
   padding: 3rem 0 3rem 0;
+}
+
+.projectGallery img {
+  max-width: 600px;
+  max-height: 420px;
+}
+
+.projectGallery a {
+  color:cornflowerblue;
+}
+
+.projectGallery .projectLinks {
+  width: 8rem;
+  transition-duration: 0.3s;
+}
+
+.projectGallery .projectLinks:hover {
+  transform: scale(1.05);
+  transition-duration: 0.3s;
 }
 
 .more {
