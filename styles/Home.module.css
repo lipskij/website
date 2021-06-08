@@ -79,7 +79,6 @@
   transition-duration: 0.3s;
   background: transparent;
   border: thin solid #fefefe;
-  margin: 0;
   /* animation: btn 1s ease-in-out; */
 }
 
@@ -223,7 +222,7 @@
   padding: 1rem;
   width: 12rem;
   height: 5rem;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-weight: 900;
   font-family: "Exo", sans-serif;
   transition-duration: 0.3s;

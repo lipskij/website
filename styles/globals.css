@@ -32,7 +32,6 @@ nav a {
   text-decoration: none;
   color: #fefefe;
   font-family: 'Exo', sans-serif;
-  margin-right: 4rem;
 }
 
 nav li:hover {
@@ -46,12 +45,14 @@ nav ul {
   justify-content: space-around;
   align-items: center;
   margin: 0;
+  width: 65vw;
 }
 
 nav li {
   text-decoration: none;
   list-style: none;
   transition-duration: 0.3s;
+  height: 2rem;
 }
 
 a {
