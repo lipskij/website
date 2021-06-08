@@ -66,9 +66,11 @@ export default function Home() {
           </video>
           <h1 className={styles.title}>Hi. I'm Emil</h1>
           <h2>Front End web developer</h2>
-          
-            <button><Link href='#contacts'>GET IN TOUCH</Link></button>
-          
+
+          <button>
+            <Link href='#contacts'>GET IN TOUCH</Link>
+          </button>
+
           <div className={styles.secondTxt}>
             <p>I code intresting interactive web sites</p>
             <p>Using tools like HTML, CSS3 and JavaScript</p>
@@ -108,9 +110,6 @@ export default function Home() {
         <a name='projects'></a>
 
         <section className={styles.projectSection}>
-          <a href='#home' aria-label='home'>
-            <VscArrowUp size={30} className={styles.arrowHome} />
-          </a>
           <h2>PROJECTS</h2>
           <div className={styles.projectGallery}>
             <Link href='https://skidoc.fr/'>

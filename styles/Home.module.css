@@ -175,13 +175,6 @@
   cursor: pointer;
 }
 
-.arrowHome {
-  position:absolute;
-  right: 10%;
-  top: 4rem;
-  transition-duration: 0.5s;
-}
-
 .projectGallery {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -465,9 +458,6 @@
     align-items: center;
     text-align: center;
     padding-top: 1rem;
-  }
-  .arrowHome {
-    margin-top: 3.5rem;
   }
 
   .more {
