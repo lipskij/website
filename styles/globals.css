@@ -61,17 +61,6 @@ a {
   text-decoration: none;
 }
 
-.footer-icon {
-  transition-duration: 0.3s;
-}
-
-.footer-icon:hover {
-  cursor: pointer;
-  transform: scale(1.1);
-  transition-duration: 0.3s;
-  color: grey;
-}
-
 @media screen and (max-width: 480px) {
   body h1 {
     padding-top: 2rem;

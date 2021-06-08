@@ -28,28 +28,6 @@
   z-index: -1;
 }
 
-.secondTxt {
-  font-size: 1.5rem;
-  color: #fefefe;
-  margin: 3rem 0 0 20rem;
-}
-
-.secondTxt svg {
-  transition-duration: 0.5s;
-}
-
-.secondTxt svg:hover {
-  transform: scale(1.3);
-  transition-duration: 0.5s;
-}
-
-.icons {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 50%;
-}
-
 .bannerSection svg {
   color: #fefefe;
 }
@@ -71,21 +49,55 @@
 }
 
 .bannerSection button {
-  padding: 1rem;
   width: 12rem;
   height: 5rem;
-  color: #f5f5f5;
   font-family: "Exo", sans-serif;
   transition-duration: 0.3s;
-  background: transparent;
   border: thin solid #fefefe;
+  background: transparent;
   /* animation: btn 1s ease-in-out; */
+}
+
+.bannerSection button a {
+  color: #f5f5f5;
 }
 
 .bannerSection button:hover {
   cursor: pointer;
   transition-duration: 0.3s;
   transform: scale(1.05);
+}
+
+.secondTxt {
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+}
+
+.secondTxt p {
+  font-size: 1.5rem;
+  color: #fefefe;
+  margin: 0 0 0 20rem;
+}
+
+.secondTxt a {
+  margin: 0 0 0 18.5rem;
+}
+
+.secondTxt svg {
+  transition-duration: 0.5s;
+}
+
+.secondTxt svg:hover {
+  transform: scale(1.3);
+  transition-duration: 0.5s;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 50%;
 }
 
 .aboutSection {
@@ -95,12 +107,6 @@
   width: 100%;
   height: 90vh;
   background-color: #f5f5f5;
-}
-
-.aboutTxt {
-  transition-duration: 0.5s;
-  opacity: 0;
-  transform: translateX(-300px);
 }
 
 .aboutSection h2 {
@@ -120,11 +126,11 @@
   height: 50vh;
 }
 
-.aboutSection svg {
+.aboutSection a {
   transition-duration: 0.5s;
 }
 
-.aboutSection svg:hover {
+.aboutSection a:hover {
   transform: scale(1.3);
   transition-duration: 0.5s;
 }
@@ -172,12 +178,7 @@
 .arrowHome {
   position:absolute;
   right: 10%;
-  margin-top: 4rem;
-  transition-duration: 0.5s;
-}
-
-.arrowHome:hover {
-  transform: scale(1.3);
+  top: 4rem;
   transition-duration: 0.5s;
 }
 
@@ -196,17 +197,6 @@
 
 .projectGallery a {
   color:#167ab4;
-}
-
-.projectGallery .projectLinks {
-  width: 8rem;
-  font-weight: 900;
-  transition-duration: 0.3s;
-}
-
-.projectGallery .projectLinks:hover {
-  transform: scale(1.05);
-  transition-duration: 0.3s;
 }
 
 .more {
@@ -248,7 +238,11 @@
 }
 
 .footer a {
-  padding: 0 1rem 0 1rem;
+  margin: 1rem;
+}
+
+.footer a:hover {
+  color: rgb(170, 170, 100);
 }
 
 @keyframes text {
