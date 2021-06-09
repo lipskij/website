@@ -356,42 +356,61 @@
     display: flex;
     flex-direction: column;
     padding-left: 4rem;
-    height: 70vh;
-    width: 100vw;
+    width: 50vw;
   }
   .bannerSection video {
-    width: 110vw;
-    height: 110vh;
+    width: 100vw;
+    height: 100vh;
   }
-  /* .bannerSection h1{
+  .bannerSection button a {
+    font-size: 1.2rem;
+  }
+  .bannerSection h1{
     font-size: 1.8rem;
-  } */
+  }
   .bannerSection h2 {
     font-size: 1.2rem;
   }
   .bannerSection button {
     width: 10rem;
-    height: 4rem;
+    padding: 1rem;
     font-size: 1rem;
   }
   .bannerSection svg {
     margin: 0 0 0 50%;
   }
   .secondTxt {
+    position: absolute;
+    top: 25%;
+    width: 90vw;
     margin: 0;
-    padding-top: 1rem;
     font-size: 1.2rem;
+  }
+  .secondTxt p {
+    margin: 0 0 0 18rem;
+  }
+  .secondTxt a {
+    margin: 0 0 0 10rem;
   }
   /* about */
   .aboutSection {
+    height: 100%;
     text-align: center;
+  }
+  .aboutSection div{
+    width: 90vw;
+    height: 50vh;
+  }
+  .aboutSection .icons {
+    height: 5rem;
+    margin: 10rem 0 0 0;
+  }
+  .aboutSection a {
+    margin: 0;
   }
   .aboutSection h2 {
     font-size: 1.8rem;
-    padding: 0;
-  }
-  .aboutSection div {
-    padding-top: 1rem;
+    padding: 1rem;
   }
   /* projects */
   .projectSection img {
@@ -426,20 +445,29 @@
     width: 100vw;
     height: 70vh;
   }
+  .bannerSection svg {
+    margin: 2rem 0 0 0;
+  }
   .main h1 {
     font-size: 2.5rem;
   }
   .main h2 {
     font-size: 1.5rem;
   }
-  .bannerSection svg {
-    margin: 2rem 0 0 0;
+  .aboutSection {
+    height: 100%;
+    text-align: center;
   }
   .aboutSection div{
     width: 90vw;
+    height: 50vh;
   }
-  .aboutSection svg {
-    margin-bottom: 3rem;
+  .aboutSection .icons {
+    height: 5rem;
+    margin: 15rem 0 0 0;
+  }
+  .aboutSection a {
+    margin: 0;
   }
   
   .projectGallery {
@@ -458,6 +486,15 @@
     align-items: center;
     text-align: center;
     padding-top: 1rem;
+  }
+
+  .secondTxt p {
+    margin: 0;
+    width: 80vw;
+  }
+
+  .secondTxt a {
+    margin: 0;
   }
 
   .more {
