@@ -53,8 +53,6 @@ const ContactForm = () => {
     }
   };
 
-  console.log(disabled);
-
   return (
     <div className={styles.emailCell}>
       <h2>CONTACT</h2>
