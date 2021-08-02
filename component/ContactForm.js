@@ -55,8 +55,8 @@ const ContactForm = () => {
 
   return (
     <div className={styles.emailCell}>
-      <h2>CONTACT</h2>
       <div className={styles.emailForm}>
+        <h1 className={styles.messageSvg}>Message me</h1>
         <form name='contact' method='POST' data-netlify='true'>
           <input type='hidden' name='form-name' value='contact' />
           <div>

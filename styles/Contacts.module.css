@@ -13,7 +13,7 @@
 
 .emailForm {
   border-radius: 5px;
-  width: 60vw;
+  width: 50vw;
   background-color: #f2f2f2;
   padding: 20px;
   margin: 0 auto;
@@ -52,13 +52,22 @@
   width: 100%;
   height: 4rem;
   border: none;
-  font-family: 'Exo', sans-serif;
+  font-family: "Exo", sans-serif;
 }
 
 .button button:hover {
   cursor: pointer;
   background: black;
   color: #f2f2f2;
+}
+
+.messageSvg {
+  width: 10rem;
+  transition-duration: 0.6s;
+}
+.messageSvg:hover {
+  transition-duration: 0.6s;
+  color: lightseagreen;
 }
 
 @media screen and (max-width: 480px) {

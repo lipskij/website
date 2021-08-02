@@ -135,6 +135,12 @@
   transition-duration: 0.5s;
 }
 
+.aboutTxt {
+  transition-duration: 1s;
+  opacity: 0;
+  transform: translateX(-300px);
+}
+
 .projectSection {
   display: flex;
   flex-direction: column;
@@ -161,7 +167,7 @@
   width: 600px;
   height: 420px;
   box-shadow: 3px 3px 10px 2px rgb(197, 197, 197);
-  transition-duration: 0.5s;
+  transition-duration: 1s;
   opacity: 0;
   transform: translateX(-300px);
 }
