@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap");
 
 * {
   margin: 0;
@@ -11,7 +11,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Exo', sans-serif;
+  font-family: "Exo", sans-serif;
   line-height: 2;
   scroll-behavior: smooth;
 }
@@ -31,7 +31,7 @@ nav {
 nav a {
   text-decoration: none;
   color: #fefefe;
-  font-family: 'Exo', sans-serif;
+  font-family: "Exo", sans-serif;
 }
 
 nav li:hover {
@@ -59,6 +59,25 @@ a {
   font-size: 1.5rem;
   color: inherit;
   text-decoration: none;
+}
+
+.side-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: fixed;
+  right: 20px;
+  top: 45%;
+}
+.side-icons a {
+  transition-duration: 0.3s;
+  transform: scale(1.5);
+  margin: 0.5rem
+}
+.side-icons a:hover {
+  transform: scale(1.8);
+  transition-duration: 0.3s;
+  color: rgb(170, 170, 100);
 }
 
 @media screen and (max-width: 480px) {

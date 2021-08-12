@@ -59,6 +59,30 @@ export default function Home() {
       <a name='home'></a>
       <Nav />
       <main className={styles.main}>
+        <div className='side-icons'>
+          <Link href='https://github.com/lipskij'>
+            <a
+              className='footer-icon'
+              href='https://github.com/lipskij'
+              target='_blank'
+              aria-label='github'
+              rel='noreferrer'
+            >
+              <AiFillGithub size={30} />
+            </a>
+          </Link>
+          <Link href='https://www.linkedin.com/in/emil-lipskij-6920831b2/'>
+            <a
+              className='footer-icon'
+              href='https://www.linkedin.com/in/emil-lipskij-6920831b2/'
+              target='_blank'
+              aria-label='linkedin'
+              rel='noreferrer'
+            >
+              <AiFillLinkedin size={30} />
+            </a>
+          </Link>
+        </div>
         <section className={styles.bannerSection}>
           <video autoPlay muted loop>
             <source src='video.webm' type='video/webm' />
