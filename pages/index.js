@@ -68,7 +68,7 @@ export default function Home() {
               aria-label='github'
               rel='noreferrer'
             >
-              <AiFillGithub style={{color: 'lightyellow'}} size={30} />
+              <AiFillGithub size={30} />
             </a>
           </Link>
           <Link href='https://www.linkedin.com/in/emil-lipskij-6920831b2/'>
@@ -79,7 +79,7 @@ export default function Home() {
               aria-label='linkedin'
               rel='noreferrer'
             >
-              <AiFillLinkedin style={{color: 'lightyellow'}} size={30} />
+              <AiFillLinkedin size={30} />
             </a>
           </Link>
         </div>
