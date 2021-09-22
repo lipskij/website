@@ -45,6 +45,26 @@ export default function Home() {
 
   const today = new Date().getFullYear();
 
+  const [offset, setOffset] = useState(0);
+
+  useEffect(() => {
+    window.onscroll = () => {
+      setOffset(window.pageYOffset);
+    };
+    return () => {
+      setOffset(0);
+    };
+  }, []);
+
+  console.log(offset);
+
+  const translateX = offset;
+
+  let zIndex;
+  if (offset > 300) {
+    zIndex = 2;
+  }
+
   return (
     <div className={styles.container}>
       <Head>
@@ -59,7 +79,7 @@ export default function Home() {
       <a name='home'></a>
       <Nav />
       <main className={styles.main}>
-        <div className='side-icons'>
+        <div style={{ zIndex: zIndex }} className='side-icons'>
           <Link href='https://github.com/lipskij'>
             <a
               className='footer-icon'
@@ -102,11 +122,13 @@ export default function Home() {
               <VscArrowDown size={50} />
             </a>
           </div>
+          <a name='about'></a>
         </section>
 
-        <a name='about'></a>
-
-        <section className={styles.aboutSection}>
+        <section
+          style={{ transform: `translateY(-${translateX / 3.5}px)` }}
+          className={styles.aboutSection}
+        >
           <h2>ABOUT</h2>
           <div ref={ref} className={styles.aboutTxt}>
             <p>
