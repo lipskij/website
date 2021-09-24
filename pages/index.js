@@ -78,7 +78,7 @@ export default function Home() {
               className='footer-icon'
               href='https://github.com/lipskij'
               target='_blank'
-              aria-label='github'
+              aria-label='github-link'
               rel='noreferrer'
             >
               <AiFillGithub size={30} />
@@ -89,7 +89,7 @@ export default function Home() {
               className='footer-icon'
               href='https://www.linkedin.com/in/emil-lipskij-6920831b2/'
               target='_blank'
-              aria-label='linkedin'
+              aria-label='linkedin-link'
               rel='noreferrer'
             >
               <AiFillLinkedin size={30} />
@@ -111,7 +111,7 @@ export default function Home() {
           <div className={styles.secondTxt}>
             <p>I code intresting interactive web sites</p>
             <p>Using tools like HTML, CSS3 and JavaScript</p>
-            <a href='#about' aria-label='about'>
+            <a href='#about' aria-label='about-section'>
               <VscArrowDown size={50} />
             </a>
           </div>
@@ -141,7 +141,7 @@ export default function Home() {
             <SiMeteor size={50} />
           </div>
 
-          <a href='#projects' aria-label='projects'>
+          <a href='#projects' aria-label='projects-section'>
             <VscArrowDown size={30} />
           </a>
         </section>
@@ -152,7 +152,7 @@ export default function Home() {
           <h2>PROJECTS</h2>
           <div className={styles.projectGallery}>
             <Link href='https://skidoc.fr/'>
-              <a rel='noopener' aria-label='project' target='_blank'>
+              <a rel='noopener' aria-label='project-link' target='_blank'>
                 <picture>
                   <source srcSet='ski.webp' />
                   <img ref={ref1} src='ski.png' alt='project' />
@@ -166,7 +166,7 @@ export default function Home() {
                 <a
                   className={styles.projectLinks}
                   rel='noopener'
-                  aria-label='project'
+                  aria-label='project-site'
                   target='_blank'
                 >
                   Click to see.
@@ -175,7 +175,7 @@ export default function Home() {
             </p>
 
             <Link href='https://vaskichi.meteorapp.com/'>
-              <a rel='noopener' aria-label='project' target='_blank'>
+              <a rel='noopener' aria-label='project-vaskichi' target='_blank'>
                 <picture>
                   <source srcSet='game.webp' />
                   <img ref={ref2} src='game.jpeg' alt='project' />
@@ -190,7 +190,7 @@ export default function Home() {
                 <a
                   className={styles.projectLinks}
                   rel='noopener'
-                  aria-label='project'
+                  aria-label='project-pr'
                   target='_blank'
                 >
                   Click to see.
@@ -198,7 +198,7 @@ export default function Home() {
               </Link>
             </p>
             <Link href='https://covid-19-graph-ltu.netlify.app/'>
-              <a rel='noopener' aria-label='project' target='_blank'>
+              <a rel='noopener' aria-label='project-pro' target='_blank'>
                 <picture>
                   <source srcSet='covid11.webp' />
                   <img ref={ref3} src='covid.png' alt='project' />
@@ -214,7 +214,7 @@ export default function Home() {
                 <a
                   className={styles.projectLinks}
                   rel='noopener'
-                  aria-label='project'
+                  aria-label='project-proj'
                   target='_blank'
                 >
                   Click to see.
@@ -229,7 +229,7 @@ export default function Home() {
                 className='footer-icon'
                 href='https://github.com/lipskij'
                 target='_blank'
-                aria-label='github'
+                aria-label='github-link'
                 rel='noreferrer'
               >
                 <button>CHECK IT</button>
@@ -245,13 +245,13 @@ export default function Home() {
       </main>
 
       <footer className={styles.footer}>
-        <div>
+        <div style={{marginTop: '1rem'}}>
           <Link href='https://github.com/lipskij'>
             <a
               className='footer-icon'
               href='https://github.com/lipskij'
               target='_blank'
-              aria-label='github'
+              aria-label='github-site'
               rel='noreferrer'
             >
               <AiFillGithub size={30} />
@@ -262,14 +262,14 @@ export default function Home() {
               className='footer-icon'
               href='https://www.linkedin.com/in/emil-lipskij-6920831b2/'
               target='_blank'
-              aria-label='linkedin'
+              aria-label='linkedin-link'
               rel='noreferrer'
             >
               <AiFillLinkedin size={30} />
             </a>
           </Link>
         </div>
-        <p>Made By Emil Lipskij 💻 {today}</p>
+        <p style={{marginBottom: '1.5rem'}}>Made By Emil Lipskij 💻 {today}</p>
       </footer>
     </div>
   );
