@@ -64,7 +64,6 @@ export default function Home() {
         <title>Emil Web Developer</title>
         <link rel='icon' href='/favicon.ico' />
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
-        <meta http-equiv="Content-Security-Policy" content="script-src 'none'"/>
         <meta
           name='description'
           content='Emil Lipskij web developer front end'
