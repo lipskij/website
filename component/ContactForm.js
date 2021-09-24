@@ -19,11 +19,9 @@ const ContactForm = () => {
   const nameInput = (values) => {
     if (values.target.value.length > 25) {
       setText("Name is too long");
-      // setDisabled(true);
     }
     if (values.target.value.length === 0) {
       setText("Enter your name");
-      // setDisabled(true);
     } else {
       setText("");
     }
@@ -46,7 +44,6 @@ const ContactForm = () => {
     }
     if (message.target.value.length === 0 || message.target.value.length <= 3) {
       setMessage("Message has to be at least 5 letters");
-      // setDisabled(true);
     } else {
       setDisabled(false);
       setMessage("");

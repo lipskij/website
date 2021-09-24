@@ -96,7 +96,12 @@
     width: 90vw;
   }
   .button button {
-    height: 6vh;
+    height: 4.5rem;
+  }
+
+  .messageSvg{
+    text-align: center;
+    width: 80vw;
   }
 }
 

@@ -56,14 +56,7 @@ export default function Home() {
     };
   }, []);
 
-  console.log(offset);
-
   const translateX = offset;
-
-  let zIndex;
-  if (offset > 300) {
-    zIndex = 2;
-  }
 
   return (
     <div className={styles.container}>
@@ -71,6 +64,7 @@ export default function Home() {
         <title>Emil Web Developer</title>
         <link rel='icon' href='/favicon.ico' />
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+        <meta http-equiv="Content-Security-Policy" content="script-src 'none'"/>
         <meta
           name='description'
           content='Emil Lipskij web developer front end'
@@ -79,7 +73,7 @@ export default function Home() {
       <a name='home'></a>
       <Nav />
       <main className={styles.main}>
-        <div style={{ zIndex: zIndex }} className='side-icons'>
+        <div className='side-icons'>
           <Link href='https://github.com/lipskij'>
             <a
               className='footer-icon'
@@ -111,9 +105,9 @@ export default function Home() {
           <h1 className={styles.title}>Hi. I'm Emil</h1>
           <h2>Front End web developer</h2>
 
-          <button>
-            <Link href='#contacts'>GET IN TOUCH</Link>
-          </button>
+          <Link href='#contacts'>
+            <button>GET IN TOUCH</button>
+          </Link>
 
           <div className={styles.secondTxt}>
             <p>I code intresting interactive web sites</p>
