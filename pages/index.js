@@ -44,6 +44,7 @@ export default function Home() {
 
   const [offset, setOffset] = useState(0);
 
+  
   useEffect(() => {
     window.onscroll = () => {
       setOffset(window.pageYOffset);
