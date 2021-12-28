@@ -184,7 +184,7 @@ export default function Home() {
               </Link>
             </p>
 
-            <Link href='https://vaskichi.meteorapp.com/'>
+            <Link href='https://rps.eu.meteorapp.com/'>
               <a rel='noopener' aria-label='project-vaskichi' target='_blank'>
                 <picture>
                   <source srcSet='vaskichi.webp' />
@@ -196,7 +196,7 @@ export default function Home() {
               This was just a learning project,but ended up being quite fun.{" "}
               <br></br>
               For this game i used MeteorJs, React, MongoDB.
-              <Link href='https://vaskichi.meteorapp.com/'>
+              <Link href='https://rps.eu.meteorapp.com/'>
                 <a
                   className={styles.projectLinks}
                   rel='noopener'
