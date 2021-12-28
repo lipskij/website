@@ -8,7 +8,6 @@ import { VscArrowDown, VscArrowUp } from "react-icons/vsc";
 import {
   SiNextDotJs,
   SiJavascript,
-  SiGatsby,
   SiMeteor,
   SiCss3,
   SiReact,
@@ -137,7 +136,6 @@ export default function Home() {
             <SiCss3 size={50} />
             <SiReact size={50} />
             <SiNextDotJs size={50} />
-            <SiGatsby size={50} />
             <SiMeteor size={50} />
           </div>
 
@@ -160,7 +158,7 @@ export default function Home() {
               </a>
             </Link>
             <p>
-              Creating internal stock management system using NoSQL, meteor and
+              Creating internal stock management system using NoSQL, MeteorJs and
               React. Using AWS and working with CI/CD.
               <Link href='https://skidoc.fr/'>
                 <a
@@ -245,7 +243,7 @@ export default function Home() {
       </main>
 
       <footer className={styles.footer}>
-        <div style={{marginTop: '1rem'}}>
+        <div style={{ marginTop: "1rem" }}>
           <Link href='https://github.com/lipskij'>
             <a
               className='footer-icon'
@@ -269,7 +267,9 @@ export default function Home() {
             </a>
           </Link>
         </div>
-        <p style={{marginBottom: '1.5rem'}}>Made By Emil Lipskij 💻 {today}</p>
+        <p style={{ marginBottom: "1.5rem" }}>
+          Made By Emil Lipskij 💻 {today}
+        </p>
       </footer>
     </div>
   );
