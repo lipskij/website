@@ -55,6 +55,7 @@ export default function Home() {
 
   const translateX = offset;
 
+  
   return (
     <div className={styles.container}>
       <Head>
