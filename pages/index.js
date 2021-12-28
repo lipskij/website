@@ -1,10 +1,10 @@
-import React, { useEffect, useRef, useState } from "react";
 import Head from "next/head";
+import React, { useEffect, useRef, useState } from "react";
 import styles from "../styles/Home.module.css";
 import Nav from "../component/Nav";
 import Link from "next/link";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
-import { VscArrowDown, VscArrowUp } from "react-icons/vsc";
+import { VscArrowDown } from "react-icons/vsc";
 import {
   SiNextDotJs,
   SiJavascript,
@@ -14,9 +14,7 @@ import {
 } from "react-icons/si";
 import ContactForm from "../component/ContactForm";
 
-// TODO: add next js project: take jpg image and webp image
-// TODO: add next js project: add a link to the project
-// TODO: add send me cash project: add a link to the project
+
 // TODO: change home page background
 // TODO: change nav interaction on desctop
 
@@ -24,6 +22,8 @@ export default function Home() {
   const ref = useRef();
   const ref1 = useRef();
   const ref2 = useRef();
+  const ref3 = useRef();
+  const ref4 = useRef();
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -39,17 +39,24 @@ export default function Home() {
         threshold: 0.1,
       }
     );
-    if (ref.current && ref1.current && ref2.current) {
+    if (
+      ref.current &&
+      ref1.current &&
+      ref2.current &&
+      ref3.current &&
+      ref4.current
+    ) {
       observer.observe(ref.current);
       observer.observe(ref1.current);
       observer.observe(ref2.current);
+      observer.observe(ref3.current);
+      observer.observe(ref4.current);
     }
-  }, [ref, ref1, ref2]);
+  }, [ref, ref1, ref2, ref3, ref4]);
 
   const today = new Date().getFullYear();
 
   const [offset, setOffset] = useState(0);
-
 
   useEffect(() => {
     window.onscroll = () => {
@@ -62,7 +69,6 @@ export default function Home() {
 
   const translateX = offset;
 
-  
   return (
     <div className={styles.container}>
       <Head>
@@ -181,8 +187,8 @@ export default function Home() {
             <Link href='https://vaskichi.meteorapp.com/'>
               <a rel='noopener' aria-label='project-vaskichi' target='_blank'>
                 <picture>
-                  <source srcSet='game.webp' />
-                  <img ref={ref2} src='game.jpeg' alt='project' />
+                  <source srcSet='vaskichi.webp' />
+                  <img ref={ref2} src='vaskichi.png' alt='project' />
                 </picture>
               </a>
             </Link>
@@ -191,6 +197,53 @@ export default function Home() {
               <br></br>
               For this game i used MeteorJs, React, MongoDB.
               <Link href='https://vaskichi.meteorapp.com/'>
+                <a
+                  className={styles.projectLinks}
+                  rel='noopener'
+                  aria-label='project-pr'
+                  target='_blank'
+                >
+                  Click to see.
+                </a>
+              </Link>
+            </p>
+
+            <Link href='https://nextjs-front-end.netlify.app/'>
+              <a rel='noopener' aria-label='project-nextJs' target='_blank'>
+                <picture>
+                  <source srcSet='next-js.webp' />
+                  <img ref={ref3} src='next-js.png' alt='project' />
+                </picture>
+              </a>
+            </Link>
+            <p>
+              Another project using NextJs, React and Framer Motion. Was created
+              to learn React modules, light/dark theme toggle, smooth page
+              transitions, and SVG animation.
+              <Link href='https://nextjs-front-end.netlify.app/'>
+                <a
+                  className={styles.projectLinks}
+                  rel='noopener'
+                  aria-label='project-pr'
+                  target='_blank'
+                >
+                  Click to see.
+                </a>
+              </Link>
+            </p>
+
+            <Link href='https://send-cash.netlify.app/'>
+              <a rel='noopener' aria-label='project-send-money' target='_blank'>
+                <picture>
+                  <source srcSet='send-money.webp' />
+                  <img ref={ref4} src='send-money.png' alt='project' />
+                </picture>
+              </a>
+            </Link>
+            <p>
+              Payment website for sending money. Using Stripe API. Netlify
+              functions for serverless deployment along with Express Js.
+              <Link href='https://send-cash.netlify.app/'>
                 <a
                   className={styles.projectLinks}
                   rel='noopener'
@@ -225,7 +278,7 @@ export default function Home() {
       </main>
 
       <footer className={styles.footer}>
-        <div style={{ marginTop: "1rem" }}>
+        <div>
           <Link href='https://github.com/lipskij'>
             <a
               className='footer-icon'
@@ -249,7 +302,7 @@ export default function Home() {
             </a>
           </Link>
         </div>
-        <p style={{ marginBottom: "1.5rem" }}>
+        <p>
           Made By Emil Lipskij 💻 {today}
         </p>
       </footer>
