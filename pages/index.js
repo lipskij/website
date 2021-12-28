@@ -18,7 +18,6 @@ export default function Home() {
   const ref = useRef();
   const ref1 = useRef();
   const ref2 = useRef();
-  const ref3 = useRef();
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -34,13 +33,12 @@ export default function Home() {
         threshold: 0.1,
       }
     );
-    if (ref.current && ref1.current && ref2.current && ref3.current) {
+    if (ref.current && ref1.current && ref2.current) {
       observer.observe(ref.current);
       observer.observe(ref1.current);
-      observer.observe(ref3.current);
       observer.observe(ref2.current);
     }
-  }, [ref, ref1, ref2, ref3]);
+  }, [ref, ref1, ref2]);
 
   const today = new Date().getFullYear();
 
