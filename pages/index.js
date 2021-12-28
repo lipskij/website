@@ -158,8 +158,8 @@ export default function Home() {
               </a>
             </Link>
             <p>
-              Creating internal stock management system using NoSQL, MeteorJs and
-              React. Using AWS and working with CI/CD.
+              Creating internal stock management system using NoSQL, MeteorJs
+              and React. Using AWS and working with CI/CD.
               <Link href='https://skidoc.fr/'>
                 <a
                   className={styles.projectLinks}
@@ -189,30 +189,6 @@ export default function Home() {
                   className={styles.projectLinks}
                   rel='noopener'
                   aria-label='project-pr'
-                  target='_blank'
-                >
-                  Click to see.
-                </a>
-              </Link>
-            </p>
-            <Link href='https://covid-19-graph-ltu.netlify.app/'>
-              <a rel='noopener' aria-label='project-pro' target='_blank'>
-                <picture>
-                  <source srcSet='covid11.webp' />
-                  <img ref={ref3} src='covid.png' alt='project' />
-                </picture>
-              </a>
-            </Link>
-            <p>
-              A React project to track COVID - 19 cases in my country.
-              <br></br>
-              Data was used from external API along with Axios for HTTP
-              requests.
-              <Link href='https://covid-19-graph-ltu.netlify.app/'>
-                <a
-                  className={styles.projectLinks}
-                  rel='noopener'
-                  aria-label='project-proj'
                   target='_blank'
                 >
                   Click to see.
