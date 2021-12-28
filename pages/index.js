@@ -14,6 +14,12 @@ import {
 } from "react-icons/si";
 import ContactForm from "../component/ContactForm";
 
+// TODO: add next js project: take jpg image and webp image
+// TODO: add next js project: add a link to the project
+// TODO: add send me cash project: add a link to the project
+// TODO: change home page background
+// TODO: change nav interaction on desctop
+
 export default function Home() {
   const ref = useRef();
   const ref1 = useRef();
@@ -44,7 +50,7 @@ export default function Home() {
 
   const [offset, setOffset] = useState(0);
 
-  
+
   useEffect(() => {
     window.onscroll = () => {
       setOffset(window.pageYOffset);

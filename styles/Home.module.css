@@ -45,13 +45,13 @@
 
 .bannerSection p {
   /* animation: btn 1s ease-in-out; */
-  font-family: "Exo", sans-serif;
+  font-family: sans-serif;
 }
 
 .bannerSection button {
   width: 12rem;
   height: 5rem;
-  font-family: "Exo", sans-serif;
+  font-family: sans-serif;
   transition-duration: 0.3s;
   border: thin solid #fefefe;
   background: transparent;
@@ -214,7 +214,7 @@
   height: 5rem;
   font-size: 1.3rem;
   font-weight: 900;
-  font-family: "Exo", sans-serif;
+  font-family: sans-serif;
   transition-duration: 0.3s;
   background: transparent;
   color: black;
