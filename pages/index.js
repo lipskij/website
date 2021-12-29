@@ -232,7 +232,7 @@ export default function Home() {
               </Link>
             </p>
 
-            <Link href='https://send-cash.netlify.app/'>
+            <Link href='https://sendeuroto.me/'>
               <a rel='noopener' aria-label='project-send-money' target='_blank'>
                 <picture>
                   <source srcSet='send-money.webp' />
@@ -243,7 +243,7 @@ export default function Home() {
             <p>
               Payment website for sending money. Using Stripe API. Netlify
               functions for serverless deployment along with Express Js.
-              <Link href='https://send-cash.netlify.app/'>
+              <Link href='https://sendeuroto.me/'>
                 <a
                   className={styles.projectLinks}
                   rel='noopener'
