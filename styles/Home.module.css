@@ -5,7 +5,6 @@
 }
 
 .main {
-  padding-top: 5rem;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -15,17 +14,10 @@
 .bannerSection {
   display: flex;
   flex-direction: column;
-  padding: 0 0 0 15rem;
+  padding: 8rem 0 0 15rem;
   width: 100%;
-  min-height: 90vh;
-}
-
-.bannerSection video {
-  position: absolute;
-  right: 0;
-  top: 0%;
-  height: 110%;
-  z-index: -1;
+  min-height: 100vh;
+  background-color: #2e2e2e;
 }
 
 .bannerSection svg {
@@ -52,6 +44,7 @@
   width: 12rem;
   height: 5rem;
   font-family: sans-serif;
+  font-weight: 900;
   transition-duration: 0.3s;
   border: thin solid #fefefe;
   background: transparent;

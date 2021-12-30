@@ -14,7 +14,6 @@ import {
 } from "react-icons/si";
 import ContactForm from "../component/ContactForm";
 
-
 // TODO: change home page background
 // TODO: change nav interaction on desctop
 
@@ -108,10 +107,6 @@ export default function Home() {
           </Link>
         </div>
         <section className={styles.bannerSection}>
-          <video autoPlay muted loop>
-            <source src='video.webm' type='video/webm' />
-            {/* <source src='video.mp4' type='video/mp4' /> */}
-          </video>
           <h1 className={styles.title}>Hi. I'm Emil</h1>
           <h2>Front End web developer</h2>
 
@@ -302,9 +297,7 @@ export default function Home() {
             </a>
           </Link>
         </div>
-        <p>
-          Made By Emil Lipskij 💻 {today}
-        </p>
+        <p>Made By Emil Lipskij 💻 {today}</p>
       </footer>
     </div>
   );

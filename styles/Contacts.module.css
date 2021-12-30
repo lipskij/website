@@ -54,6 +54,7 @@
   border: none;
   font-family: sans-serif;
   transition-duration: 0.3s;
+  font-weight: 900;
 }
 
 .button button:hover {

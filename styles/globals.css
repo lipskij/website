@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -23,19 +22,7 @@ nav {
   height: 4rem;
   width: 100%;
   z-index: 10;
-  background: transparent;
-}
-
-nav a {
-  text-decoration: none;
-  color: #fefefe;
-  font-family:  sans-serif;
-}
-
-nav li:hover {
-  cursor: pointer;
-  transform: scale(0.9);
-  transition-duration: 0.3s;
+  background: #2e2e2e;
 }
 
 nav ul {
@@ -51,6 +38,22 @@ nav li {
   list-style: none;
   transition-duration: 0.3s;
   height: 2rem;
+}
+
+nav li:hover {
+  cursor: pointer;
+  transform: scale(0.9);
+  transition-duration: 0.3s;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fefefe;
+  font-family: sans-serif;
+}
+
+nav .home:hover {
+  color: #ce1c1c;
 }
 
 a {
