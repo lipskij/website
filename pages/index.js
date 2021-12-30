@@ -15,7 +15,7 @@ import {
 import ContactForm from "../component/ContactForm";
 
 // TODO: change home page background
-// TODO: change nav interaction on desctop
+// TODO: nav mobile change color
 
 export default function Home() {
   const ref = useRef();
