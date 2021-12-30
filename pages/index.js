@@ -167,16 +167,6 @@ export default function Home() {
             <p>
               Creating internal stock management system using NoSQL, MeteorJs
               and React. Using AWS and working with CI/CD.
-              <Link href='https://skidoc.fr/'>
-                <a
-                  className={styles.projectLinks}
-                  rel='noopener'
-                  aria-label='project-site'
-                  target='_blank'
-                >
-                  Click to see.
-                </a>
-              </Link>
             </p>
 
             <Link href='https://rps.eu.meteorapp.com/'>
@@ -191,16 +181,6 @@ export default function Home() {
               This was just a learning project,but ended up being quite fun.{" "}
               <br></br>
               For this game i used MeteorJs, React, MongoDB.
-              <Link href='https://rps.eu.meteorapp.com/'>
-                <a
-                  className={styles.projectLinks}
-                  rel='noopener'
-                  aria-label='project-pr'
-                  target='_blank'
-                >
-                  Click to see.
-                </a>
-              </Link>
             </p>
 
             <Link href='https://nextjs-front-end.netlify.app/'>
@@ -215,16 +195,6 @@ export default function Home() {
               Another project using NextJs, React and Framer Motion. Was created
               to learn React modules, light/dark theme toggle, smooth page
               transitions, and SVG animation.
-              <Link href='https://nextjs-front-end.netlify.app/'>
-                <a
-                  className={styles.projectLinks}
-                  rel='noopener'
-                  aria-label='project-pr'
-                  target='_blank'
-                >
-                  Click to see.
-                </a>
-              </Link>
             </p>
 
             <Link href='https://sendeuroto.me/'>
@@ -238,16 +208,6 @@ export default function Home() {
             <p>
               Payment website for sending money. Using Stripe API. Netlify
               functions for serverless deployment along with Express Js.
-              <Link href='https://sendeuroto.me/'>
-                <a
-                  className={styles.projectLinks}
-                  rel='noopener'
-                  aria-label='project-pr'
-                  target='_blank'
-                >
-                  Click to see.
-                </a>
-              </Link>
             </p>
           </div>
           <div className={styles.more}>

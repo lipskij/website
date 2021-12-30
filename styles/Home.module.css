@@ -145,15 +145,15 @@
 
 .projectSection h2 {
   animation: none;
-  padding: 3rem;
+  padding: 0 0 5rem;
   font-size: 2rem;
   color: black;
 }
 
 .projectSection p {
-  animation: none;
-  padding: 3rem;
+  padding: 5rem 0 3rem;
   font-size: 1.5rem;
+  width: 90%;
 }
 
 .projectSection img {
@@ -178,7 +178,8 @@
 .projectGallery {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  row-gap: 5rem;
+  row-gap: 20rem;
+  column-gap: 5rem;
   width: 95vw;
   padding: 3rem 0 3rem 0;
 }
@@ -199,6 +200,7 @@
   align-items: center;
   min-width: 50%;
   min-height: 50vh;
+  text-align: center;
 }
 
 .more button {
@@ -474,7 +476,9 @@
   .projectGallery {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 100vw;
+    align-items: center;
+    row-gap: 5rem;
   }
 
   .projectSection {
@@ -487,9 +491,17 @@
     text-align: center;
   }
 
+  .projectSection h2 {
+    padding: 0;
+  }
+
   .projectGallery img {
     width: 95vw;
     height: 100%;
+  }
+
+  .projectGallery a {
+    padding-top: 5rem;
   }
 
   .secondTxt {
