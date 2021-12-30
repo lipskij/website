@@ -436,7 +436,6 @@
   .main {
     display: flex;
     flex-direction: column;
-    padding-top: 1rem;
   }
   .bannerSection {
     display: flex;
