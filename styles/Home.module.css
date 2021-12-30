@@ -79,12 +79,12 @@
 }
 
 .secondTxt svg {
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
 }
 
 .secondTxt svg:hover {
   transform: scale(1.3);
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
 }
 
 .icons {
@@ -189,7 +189,7 @@
 }
 
 .projectGallery a {
-  color:#167ab4;
+  color: #167ab4;
 }
 
 .more {
@@ -219,7 +219,7 @@
   color: white;
   background: black;
   box-shadow: 3px 3px 10px 2px rgb(160, 160, 160);
-  transform:  scale(1.1);
+  transform: scale(1.1);
 }
 
 .footer {
@@ -271,7 +271,6 @@
     opacity: 1;
   }
 }
-
 
 @media (min-width: 768px) and (max-width: 1024px) {
   /* 
@@ -333,16 +332,14 @@
   }
 }
 
-
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   /* 
     ##Device = Tablets, Ipads (landscape)
     ##Screen = B/w 768px to 1024px
   */
-  
+
   /* all in all good */
 }
-
 
 @media (min-width: 481px) and (max-width: 767px) {
   /* 
@@ -366,7 +363,7 @@
   .bannerSection button a {
     font-size: 1.2rem;
   }
-  .bannerSection h1{
+  .bannerSection h1 {
     font-size: 1.8rem;
   }
   .bannerSection h2 {
@@ -398,7 +395,7 @@
     height: 100%;
     text-align: center;
   }
-  .aboutSection div{
+  .aboutSection div {
     width: 90vw;
     height: 50vh;
   }
@@ -440,13 +437,17 @@
   .bannerSection {
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    padding: 0;
     align-items: center;
     width: 100vw;
     height: 70vh;
   }
   .bannerSection svg {
     margin: 2rem 0 0 0;
+  }
+
+  .bannerSection h2 {
+    padding-bottom: 1rem;
   }
   .main h1 {
     font-size: 2.5rem;
@@ -458,7 +459,7 @@
     height: 100%;
     text-align: center;
   }
-  .aboutSection div{
+  .aboutSection div {
     width: 90vw;
     height: 50vh;
   }
@@ -469,16 +470,28 @@
   .aboutSection a {
     margin: 0;
   }
-  
+
   .projectGallery {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
+
+  .projectSection {
+    width: 90vw;
+    margin: 0 auto;
+  }
+
+  .projectSection p {
+    padding: 0;
+    text-align: center;
+  }
+
   .projectGallery img {
     width: 95vw;
     height: 100%;
   }
+
   .secondTxt {
     display: flex;
     flex-direction: column;
@@ -486,6 +499,10 @@
     align-items: center;
     text-align: center;
     padding-top: 1rem;
+  }
+
+  .secondTxt svg {
+    margin: 0;
   }
 
   .secondTxt p {
@@ -520,7 +537,7 @@
     display: flex;
     flex-direction: row;
   }
-  
+
   .footer a {
     margin: 0.5rem 0.5rem;
   }
